@@ -1,0 +1,27 @@
+{
+  "name": "headerparser",
+  "version": "1.0.0",
+  "description": "Parses request header and shows IP, OS and language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpoikela/fcc-api-headerparser.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "fcc"
+  ],
+  "author": "Tuomas Poikela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tpoikela/fcc-api-headerparser/issues"
+  },
+  "homepage": "https://github.com/tpoikela/fcc-api-headerparser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
