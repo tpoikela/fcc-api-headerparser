@@ -10,9 +10,19 @@ var HeaderParser = function() {
     };
     
     this.parse = function(req) {
-        data.ip = _parseIP(req.ip);
-        data.software = req.headers["user-agent"];
-        data.language = req.acceptsLanguages();
+        if (typeof req === "undefined") {
+            throw Error("Request is undefined");
+        }
+        else {
+            data.ip = _parseIP(req.ip);
+            if (req.hasOwnProperty("headers")) {
+                data.software = req.headers["user-agent"];
+            }
+            else {
+                throw Error("No headers in request!");
+            }
+            data.language = req.acceptsLanguages();
+        }
     };
     
     this.getIP = function() {
