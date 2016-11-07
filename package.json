@@ -23,5 +23,9 @@
   "homepage": "https://github.com/tpoikela/fcc-api-headerparser#readme",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0"
   }
 }
